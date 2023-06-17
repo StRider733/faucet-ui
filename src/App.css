@@ -1,3 +1,99 @@
-.App {
+/* Background styles */
+body {
+  background: linear-gradient(to right, #4F00BC, #D1005B);
+}
+
+.container {
+    background: linear-gradient(to right, #4F00BC, #D1005B);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navbar styles */
+.navbar {
+  
+  box-shadow: 0 0 0em rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h1 {
+  color: rgb(209, 62, 62);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-item {
+  color: #4F00BC;
+  font-weight: bold;
+}
+
+.connect-wallet {
+  position: relative;
+  border: 2px solid #4F00BC;
+  color: #4F00BC;
+  font-weight: bold;
+}
+
+.connect-wallet:hover {
+  background-color: #4F00BC;
+  color: white;
+}
+/* Move Connect Wallet to the right */
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.connect-wallet {
+  margin-left: auto;
+}
+
+/* Hero section styles */
+.hero {
+  background-color: white;
+  margin-top: 3rem;
+}
+
+.faucet-hero-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.box {
+  background-color: #c78080;
+  border-radius: 10px;
+  box-shadow: 0 0 1em rgba(19, 15, 15, 0.1);
+  padding: 2rem;
   text-align: center;
 }
+
+.input {
+  background-color: #f0d4d4;
+  border-radius: 5px;
+  border: 1rem;
+  color: #4F00BC;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 30rem;
+}
+
+.button {
+  background-color: #D1005B;
+  border: 1rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4F00BC;
+  cursor: pointer;
+}
+

@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {Contract, ethers} from "ethers";
+import {contract, ethers} from "ethers";
 import {useState, useEffect} from "react";
 import FaucetAbi from "./abis/Faucet.json"
 import Swal from "sweetalert2";
@@ -10,17 +10,17 @@ const faucetContractAddress = "0x186B9d0ef2e584384C950632535dfF63FB9376FB";
 
 function App() {
 
-    const [walletAddress, setWalletAddress] = useState("");
+  const [walletAddress, setWalletAddress] = useState("");
 
   const [provider,setProvider] = useState("");
   
 
-    useEffect(() => {connectWallet();},
-      [walletAddress]);
+  useEffect(() => {connectWallet();},
+  [walletAddress]);
 
 
 
-    const connectWallet = async  () => {
+  const connectWallet = async  () => {
         if(typeof window.ethereum != "undefined"){
             try{
                 const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -35,8 +35,8 @@ function App() {
                 console.log(err);
             }
         }
-    }
-    const getToken = async () => {
+  }
+  const getToken = async () => {
 
       try{
         const contract = new ethers.Contract(faucetContractAddress,FaucetAbi,provider.getSigner());
@@ -65,7 +65,7 @@ function App() {
           confirmButtonText: 'Ok'
         })
       }
-    }
+  }
 
 
 
