@@ -36,9 +36,7 @@ function App() {
             }
         }
     }
-
     const getToken = async () => {
-
 
       try{
         const contract = new ethers.Contract(faucetContractAddress,FaucetAbi,provider.getSigner());
