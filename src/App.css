@@ -132,6 +132,5 @@ body {
 p{
   color: rgb(19, 49, 184);
   font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
+  margin: top;
 }
