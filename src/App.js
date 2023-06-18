@@ -74,7 +74,7 @@ function App() {
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
-          <h1 className = "navbar-item is-size-4">My Token (MTK) Faucet</h1>
+          <h1 className = "navbar-item is-size-4">My Token (MTK) Faucet </h1>
         </div>
         <div className="navbar-menu">
           <div className="navbar-end">
@@ -98,6 +98,7 @@ function App() {
 
                 <button
                 className="button" onClick={getToken}>Get Tokens</button>
+                <p>İmport Token From : "0x51d318F2C75C4D562607F310Ead2bF94A1F3e6B8" </p>
 
 
           </div>

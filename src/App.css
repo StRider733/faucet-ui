@@ -17,7 +17,7 @@ body {
 
 .navbar-brand h1 {
   color: rgb(209, 62, 62);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }
@@ -127,4 +127,11 @@ body {
   .button {
     padding: 1rem;
   }
+}
+
+p{
+  color: rgb(19, 49, 184);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
 }
