@@ -4,14 +4,14 @@ body {
 }
 
 .container {
-    background: linear-gradient(to right, #4F00BC, #D1005B);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: linear-gradient(to right, #4F00BC, #D1005B);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 /* Navbar styles */
 .navbar {
-  
   box-shadow: 0 0 0em rgba(0, 0, 0, 0.1);
 }
 
@@ -39,6 +39,7 @@ body {
   background-color: #4F00BC;
   color: white;
 }
+
 /* Move Connect Wallet to the right */
 .navbar-menu {
   display: flex;
@@ -94,3 +95,36 @@ body {
   cursor: pointer;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand h1 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar-menu {
+    margin-top: 1rem;
+  }
+
+ 
+.input {
+  background-color: #f0d4d4;
+  border-radius: 5px;
+  border: 1px solid #4F00BC;
+  color: #4F00BC;
+  font-weight: bold;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+  .button {
+    padding: 1rem;
+  }
+}
